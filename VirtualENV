@@ -1,0 +1,7 @@
+pip install --upgrade pip --user #upgrade pip 
+
+pip install virtualenv --user
+
+python -m venv pyenv
+
+#folder will be created go to python path and run your python files. hurrahh!!
