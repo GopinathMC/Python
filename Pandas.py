@@ -1,5 +1,5 @@
 import pandas as pd
-file ='P:\Documents\SSNA prjct\Genva_Req\cust_prod_new.csv'
+file ='..'
 df = pd.read_csv(file)
 print(df)
 
@@ -32,8 +32,8 @@ df4['Decide'] = df4['Cost'].apply(lambda x : sample_fun(x))
 df5=df4.drop(columns=['T/F'])
 print(df5)
 
-filepath = 'P:\Documents\CCC Emea\Recharge_Automation\recharge.csv'
-recharge_new = pd.read_csv('P:\Documents\CCC Emea\Recharge_Automation\recharge.csv',sep='|')
+filepath = '..'
+recharge_new = pd.read_csv('..',sep='|')
 
 def calendar_year(x,y):
     x=str(x)
