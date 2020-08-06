@@ -54,3 +54,13 @@ if fil.empty:
     print('pass')
 else:
     print('chr')
+
+–-----------------------------------------------
+
+import csv
+fields =['id','company','reputation','country']
+with open('sample.csv') as csv_file:
+    csv_dictFile=csv.DictReader(csv_file,fieldnames=fields)
+    for row in csv_DictFile:
+        print(row['company']+' is located at'+row['country'])
+
